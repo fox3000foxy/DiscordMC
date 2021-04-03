@@ -1,0 +1,14 @@
+{
+  "name": "scratch-for-discord-bot",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "mineflayer": "^3.5.0",
+    "nodemon": "^2.0.7",
+    "prismarine-viewer": "^1.19.1"
+  }
+}
