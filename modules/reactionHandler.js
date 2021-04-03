@@ -25,8 +25,8 @@ function reactionHandler(client, McCli) {
 		}
 	});
 	client.on('messageReactionRemove', async (reaction, user) => {
-		if (reaction.emoji.name == controls.left) { McCli.setControlState('left', false) }
-		if (reaction.emoji.name == controls.right) { McCli.setControlState('right', false) }
+		if (reaction.emoji.name == controls.left) { McCli.setControlState('right', false) }
+		if (reaction.emoji.name == controls.right) { McCli.setControlState('left', false) }
 		if (reaction.emoji.name == controls.up) { McCli.setControlState('forward', false) }
 		if (reaction.emoji.name == controls.down) { McCli.setControlState('back', false) }
 		if (reaction.emoji.id == controls.jump) { McCli.setControlState('jump', false) }
