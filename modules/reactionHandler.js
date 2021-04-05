@@ -17,10 +17,6 @@ function reactionHandler(client, McCli) {
 			if (reaction.emoji.name == controls.lookRight) { LookRight = setInterval(() => { McCli.look(McCli.entity.yaw - 0.005, McCli.entity.pitch) }) }
 			if (reaction.emoji.name == controls.lookUp) { LookUp = setInterval(() => { McCli.look(McCli.entity.yaw, McCli.entity.pitch + 0.005) }) }
 			if (reaction.emoji.name == controls.lookDown) { LookDown = setInterval(() => { McCli.look(McCli.entity.yaw, McCli.entity.pitch - 0.005) }) }
-			if (reaction.emoji.id == controls.action) {
-				if (McCli.blockAtCursor(maxDistance = 5) != null)
-					McCli.activateBlock(McCli.blockAtCursor(maxDistance = 5))
-			}
 			if (reaction.emoji.name == controls.deleteCt) { let deleteChannel = require('./messageHandler').deleteChannel; deleteChannel(client, reaction, user) }
 			if (reaction.message.content.startsWith("> +")) {
 				let craftItem = require('./messageHandler').craftItem
